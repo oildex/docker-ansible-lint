@@ -22,3 +22,9 @@ RUN apk add --no-cache --virtual .build-deps \
     apk del .build-deps
 
 CMD ["/usr/local/bin/ansible-lint", "--help"]
+
+LABEL org.label-schema.schema-version="1.0" \
+      org.label-schema.name="ansible-lint" \
+      org.label-schema.version="3.4.21" \
+      org.label-schema.url="https://github.com/willthames/ansible-lint" \
+      org.label-schema.vcs-url="https://github.com/oildex/docker-ansible-lint"
