@@ -1,6 +1,6 @@
-FROM python:3.6.5-alpine3.7
+FROM python:3.7.0-alpine3.8
 
-ENV ANSIBLE_LINT_VERSION=3.4.21
+ENV ANSIBLE_LINT_VERSION=3.4.23
 
 RUN apk add --no-cache --virtual .build-deps \
       make \
